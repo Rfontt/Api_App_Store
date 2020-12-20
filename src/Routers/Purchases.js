@@ -9,8 +9,8 @@ const UpdatePurchasesControllers = require('../Controllers/Purchases/UpdatePurch
 const DeletePurchaseController = require('../Controllers/Purchases/DeletePurchase');
 
 purchases.post("/purchase", Authorization, CreatePurchasesController);
-purchases.get("/purchase", FindByAllPurchasesController);
-purchases.get("/purchase/:id", FindByIdPurchasesController);
+purchases.get("/purchase", Authorization, FindByAllPurchasesController);
+purchases.get("/purchase/:id", Authorization, FindByIdPurchasesController);
 purchases.put("/purchase/:id", Authorization, UpdatePurchasesControllers);
 purchases.delete("/purchase/:id", Authorization, DeletePurchaseController);
 
