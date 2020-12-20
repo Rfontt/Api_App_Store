@@ -10,7 +10,7 @@ const DeleteCustomerController = require('../Controllers/Customers/DeleteCustome
 
 customers.post("/customer", Authorization, CreateCustomersController);
 customers.get("/customer", Authorization, FindByAllCustomersController);
-customers.get("/customer/:id", Authorization, FindByIdCustomersController);
+customers.get("/customer/:id", FindByIdCustomersController);
 customers.put("/customer/:id", Authorization, UpdateCustomersController);
 customers.delete("/customer/:id", Authorization, DeleteCustomerController);
 
