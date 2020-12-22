@@ -25,9 +25,9 @@ const PasswordToken = {
             used: 0,
             token: tokengenerate
           }).table("Password");
-            return { token: tokengenerate };
+            return { status: true, token: tokengenerate };
         } catch (error) {
-            return false;
+            return { status: false, error: error };
         }
       }
       return undefined;
