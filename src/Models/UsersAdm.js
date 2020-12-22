@@ -75,7 +75,7 @@ const UserAdm = {
       var idUser = await this.findById(id);
 
       if (idUser != undefined) {
-        if (password != undefined) {
+        if (password != undefined || token != undefined) {
           try {
             var hash = await bcrypt.hash(password, 10);
             await database.update({ password: hash }).where({ id: id }).table("Users");
