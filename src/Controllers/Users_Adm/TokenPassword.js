@@ -14,7 +14,7 @@ async function TokenRecoverPassword(req, res) {
 
   var result = await PasswordToken.create(email);
   
-  if (result) {
+  if (result.status) {
     try {
       const transport =  await nodemailer.createTransport({
       host: "smtp.gmail.com",
