@@ -16,7 +16,7 @@ users.post("/user", CreateUsersAdmController);
 users.post("/login", LoginController);
 users.post("/token", TokenPasswordController);
 users.put("/user/:id", Authorization, UpdateNameAndEmailUserController);
-users.patch("/password/:id", UpdatePasswordController);
+users.patch("/password", UpdatePasswordController);
 users.delete("/user/:id", Authorization, DeleteUserController);
 
 
