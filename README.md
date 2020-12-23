@@ -32,7 +32,7 @@ npm install cors our yarn add cors
 
 - [x] Criar as rotas post, get, put e delete.
 
-- [x] Criar os controllers para a criação de usuários administradores, criação dos clientes da loja, busca por todos e por id dos clientes da loja, atualização e deleção desses clientes. Mas também os controllers que gerenciam as senhas, para que possa ocorrer a atualização dela com o deviido tratamento de erros e a mudança de token. Ademais, criar os controllers de estoque da loja.
+- [x] Criar os controllers para a criação de usuários administradores, criação dos clientes da loja, busca por todos e por um único id dos clientes da loja, atualização e deleção desses clientes. Mas também os controllers que gerenciam as senhas, para que os usuários possam atualizá-las, isso tudo com o devido tratamento de erros, pois exige mudança do hash. Ademais, criar os controllers de estoque da loja.
 
 - [x] Api criada.
 
